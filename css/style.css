@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+#loader
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@keyframes loader {
+    0%{
+        border: none;
+        opacity: 0;
+    }
+    25%
+    {
+        border-top: 2px solid white;
+        opacity: 0.5;
+    }
+    50%
+    {
+        border-right: 2px solid white;
+        opacity: 0.75;
+    }
+    75%
+    {
+        border-bottom: 2px solid white;
+        opacity: 1;
+    }
+    100%
+    {
+        border-left: 2px solid white;
+        opacity: 1;
+        
+    }
+}
+
+@keyframes textDisplay {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+#loaderText
+{
+    text-align: center;
+    padding: auto;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Gemunu Libre', sans-serif;
+    animation: textDisplay 3s linear;
+}
+
+#loadingBox
+{
+    border: 3px solid white;
+    margin: 130% auto;
+    height: auto;
+    animation: loader 6s linear;
+}
+
+#siteBody
+{
+    height: 100vh;
+}
+
+#siteHead
+{
+    color: white;
+    font-size: 1em;
+}
+
+#arcDesign
+{
+    display: flex;
+    justify-content: center;
+}
+
+#arcs .arcDiv1 {
+    border: 2px solid orangered;
+    display: inline-block;
+    min-width: 35em;
+    min-height: 35em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#arcs .arcDiv2 {
+    border: 2px solid white;
+    display: inline-block;
+    min-width: 35em;
+    min-height: 35em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#arcs .arcDiv3 {
+    border: 2px solid green;
+    display: inline-block;
+    min-width: 35em;
+    min-height: 35em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.glitch {
+    color: white;
+    font-size: 5em;
+    position: relative;
+    width: auto;
+    margin: 12%;
+    font-family: 'Kanit', sans-serif;
+}
+@keyframes noise-anim {
+    0% {
+        clip-path: inset(3% 0 84% 0);
+   }
+    5% {
+        clip-path: inset(19% 0 17% 0);
+   }
+    10% {
+        clip-path: inset(100% 0 1% 0);
+   }
+    15% {
+        clip-path: inset(97% 0 1% 0);
+   }
+    20% {
+        clip-path: inset(86% 0 4% 0);
+   }
+    25% {
+        clip-path: inset(33% 0 56% 0);
+   }
+    30% {
+        clip-path: inset(6% 0 60% 0);
+   }
+    35% {
+        clip-path: inset(86% 0 12% 0);
+   }
+    40% {
+        clip-path: inset(49% 0 35% 0);
+   }
+    45% {
+        clip-path: inset(49% 0 25% 0);
+   }
+    50% {
+        clip-path: inset(65% 0 35% 0);
+   }
+    55% {
+        clip-path: inset(57% 0 13% 0);
+   }
+    60% {
+        clip-path: inset(78% 0 13% 0);
+   }
+    65% {
+        clip-path: inset(19% 0 81% 0);
+   }
+    70% {
+        clip-path: inset(10% 0 79% 0);
+   }
+    75% {
+        clip-path: inset(30% 0 34% 0);
+   }
+    80% {
+        clip-path: inset(37% 0 36% 0);
+   }
+    85% {
+        clip-path: inset(30% 0 20% 0);
+   }
+    90% {
+        clip-path: inset(26% 0 30% 0);
+   }
+    95% {
+        clip-path: inset(41% 0 30% 0);
+   }
+    100% {
+        clip-path: inset(13% 0 78% 0);
+   }
+}
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2 {
+    0% {
+        clip-path: inset(44% 0 25% 0);
+   }
+    5% {
+        clip-path: inset(75% 0 20% 0);
+   }
+    10% {
+        clip-path: inset(37% 0 61% 0);
+   }
+    15% {
+        clip-path: inset(89% 0 7% 0);
+   }
+    20% {
+        clip-path: inset(95% 0 1% 0);
+   }
+    25% {
+        clip-path: inset(36% 0 61% 0);
+   }
+    30% {
+        clip-path: inset(46% 0 33% 0);
+   }
+    35% {
+        clip-path: inset(24% 0 74% 0);
+   }
+    40% {
+        clip-path: inset(61% 0 33% 0);
+   }
+    45% {
+        clip-path: inset(13% 0 65% 0);
+   }
+    50% {
+        clip-path: inset(9% 0 89% 0);
+   }
+    55% {
+        clip-path: inset(91% 0 4% 0);
+   }
+    60% {
+        clip-path: inset(70% 0 31% 0);
+   }
+    65% {
+        clip-path: inset(33% 0 39% 0);
+   }
+    70% {
+        clip-path: inset(85% 0 14% 0);
+   }
+    75% {
+        clip-path: inset(90% 0 7% 0);
+   }
+    80% {
+        clip-path: inset(87% 0 9% 0);
+   }
+    85% {
+        clip-path: inset(6% 0 58% 0);
+   }
+    90% {
+        clip-path: inset(4% 0 22% 0);
+   }
+    95% {
+        clip-path: inset(41% 0 31% 0);
+   }
+    100% {
+        clip-path: inset(97% 0 1% 0);
+   }
+}
+.glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    animation: noise-anim-2 15s infinite linear alternate-reverse;
+}
+
+.siteForm
+{
+    border: none;
+    background-color: transparent;
+}
+
+.siteForm:focus
+{
+    background-color: transparent;
+}
+
+#cbiID
+{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body
+{
+    min-height: 100vh;
+    background-color: black;
+}
+
+#welcomeBody
+{
+    border: 2px solid white;
+    width: auto;
+    height: auto;
+    padding: 5%;
+    margin: 2%;
+}
+
+#welcomeBody div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeImg
+{
+    height: 20vh;
+    width: 20vh;
+}
+
+.welcomeText
+{
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+
+.welcomeDetails
+{
+    margin: 3% 2%;
+    font-size: 1.5em;
+}
+
+#editProfile div
+{
+    margin: 4%;
+}
+
+#editProfile div input
+{
+    margin-left: 5%;
+    width: 30vh;
+}
